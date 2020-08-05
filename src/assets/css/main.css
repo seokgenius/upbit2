@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/*common*/
+body {font: 15px 'Noto Sans KR',sans-serif;}
+#skip-nav {position: fixed; left: 0; top: -36px; width: 100%; line-height: 35px; font-size: 16px; border-bottom: 1px solid #ffffff; color: #ffffff; background: #999999; background: rgba(0, 0, 0, 0.6); text-align: center; z-index: 10000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+/*header*/
+header {position: fixed; top: 0; width: 100%; background-color: #f4f5f8; z-index: 100; border-bottom: 1px solid #fff; height: 79px; overflow: visible;}
+header .header-wrap {width: 1400px; margin: 0 auto; padding: 0 20px;}
+header .logo {float: left; width: 77px; margin-top: 30px; margin-left: 20px; height: 17px; display: block; background: transparent url(../images/logo_upbit.png) no-repeat center/cover;}
+header .gnb {float: left; margin-left: 40px; width: 605px; height: 100%;}
+header .gnb ul li {float: left; width: 81px; height: 79px; line-height: 79px; color: #2b2b2b; margin-left: 20px;}
+header .gnb ul li:last-child a {background: yellow;}
+header .gnb ul li:hover, header .gnb ul li:focus-within {font-weight: bold;}
+header .tnb {position: absolute; top: 30px; right: 100px;}
+header .tnb ul li {position: relative; float: left; padding-left: 30px; font-size: 13px;}
+header .tnb ul li:hover, header .tnb ul li:focus-within {font-weight: bold;}
+header .tnb .service-intro {width: 24px; height: 40px;}
+header .tnb .service-intro .service {display: block; font-size: 13px;}
+header .tnb .service-intro .service span {position: relative; display: inline-block; overflow: hidden; width: 16px; height: 16px; padding-right: 8px; text-indent: -9999px; vertical-align: middle; background: url(../images/icon_main_service.png) no-repeat;}
+
+header .tnb .service-intro .service-box {width: 0; overflow: hidden;}
+header .tnb .service-intro:hover .service-box, header .tnb .service-intro:focus-within .service-box {width: 300px; position: absolute; top: 30px; right: -70px; border: 1px solid #d5d6dc; box-sizing: border-box; background: #fff; font-weight: normal;}
+
+header .tnb .service-box dt {display: block; padding-left: 15px; line-height: 30px; background: #f9fafc; font-size: 12px; color: #999;}
+header .tnb .service-box .app-down {padding: 14px;}
+header .tnb .service-box .app-down .app-qrcode {position: relative;}
+header .tnb .service-box .app-down .app-qrcode > img {position: absolute; width: 74px; height: 74px;}
+header .tnb .service-box .app-down .app-qrcode .link {padding-left: 88px;}
+header .tnb .service-box .app-down .app-qrcode .link li {margin-top: 6px;}
+header .tnb .service-box .app-down .app-qrcode .link li:first-child {margin-top: 0;}
+header .tnb .service-box .app-down .app-qrcode .link li a {display: block; width: 120px; height: 34px; line-height: 32px; border: 1px solid #ddd; font-size: 12px; color: #666; text-align: center; box-sizing: border-box;}
+header .tnb .service-box .app-down .app-qrcode .link li a span {vertical-align: middle; padding-right: 5px;}
+header .tnb .service-box .app-down .app-qrcode .link li a span img {vertical-align: baseline;}
+
+header .tnb .service-box .associated ul li {width: 100%; line-height: normal; border-bottom: 1px solid #f1f1f4; box-sizing: border-box; overflow: hidden;}
+header .tnb .service-box .associated ul li:hover, header .tnb .service-box .associated ul li:focus-within {background: #f1f1f4;}
+header .tnb .service-box .associated ul li:last-child {border-bottom: 0;}
+header .tnb .service-box .associated ul li > a {position: relative; display: block; padding: 11px 35px 12px;}
+header .tnb .service-box .associated ul li > a .app-logo {position: absolute; left: -15px; top: 44%; transform: translateY(-50%); font-size: 0;}
+header .tnb .service.box .associated ul li > a .desc {padding-left: 50px; line-height: normal;}
+header .tnb .service-box .associated .desc .service-name {font-size: 15px; color: #666;}
+header .tnb .service-box .associated .desc .service-name span {display: inline-block; margin-right: 5px; vertical-align: -5px; text-indent: -9999px;}
+header .tnb .service-box .associated .desc .service-name .beta {width: 29px; height: 13px; background: url(../images/icon_beta_tag.png) no-repeat center/cover;}
+header .tnb .service-box .associated .desc .app-subtext {padding-top: 1px; font-size: 13px; font-weight: 400; color: #999;}
+
+header .tnb .nation {padding-right: 10px; background: url(../images/gnbArrow-down.png) 100% no-repeat; display: block;}
+header .tnb .nation img {vertical-align: middle; width: 30px; height: 20.66px; box-sizing: border-box; border: 1px solid #d7d8dd;}
+header .tnb .nation-view {width: 40px; height: 40px;}
+header .tnb .nation-view .nation-choice {width: 0; overflow: hidden;}
+header .tnb .nation-view:hover .nation-choice, header .tnb .nation-view:focus-within .nation-choice {width: 180px; position: absolute; right: 0; top: 30px; box-sizing: border-box; border: 1px solid #d5d6dc; background: #fff;}
+header .tnb .nation-choice .choice {width: 100%; height: 30px; line-height: 30px; padding-left: 14px; background: #f9fafc; font-size: 12px; color: #999; font-weight: 400; box-sizing: border-box;}
+header .tnb .nation-choice ul li {width: 100%; border-bottom: 1px solid #f1f1f4; height: 44px; line-height: 44px; padding-left: 14px; text-align: left; font-size: 13px; vertical-align: top; font-weight: 500; color: #2b2b2b; box-sizing: border-box;}
+header .tnb .nation-choice ul li:hover, header .tnb .nation-choice ul li:focus-within {background: #f4f5f8; cursor: pointer;}
+header .tnb .nation-choice .choiced {background: #f4f5f8;}
+header .tnb .nation-choice .choiced a {cursor: default;}
+header .tnb .nation-choice ul li:last-child {border-bottom: 0;}
+header .tnb .nation-choice ul li a {width: 100%; display: block;}
+header .tnb .nation-choice ul li a span {padding-right: 10px;}
+header .tnb .nation-choice ul li a img {width: 30px; height: 20.66px; box-sizing: border-box; border: 1px solid #d7d8dd; vertical-align: middle;}
+
+/*main-visual*/
+.main-visual {width: 100%; height: 580px; background: #f4f5f8 url(../images/main_gal_map.png) no-repeat center 100px; padding-top: 80px;}
+.main-visual .main-wrap {width: 1400px; margin: 0 auto; position: relative; padding-top: 188px;}
+.main-visual .main-wrap .app-ico01 {position: absolute; top: 255px; left: 70px; width: 62px; height: 82px; background: transparent url(../images/ico01.png) no-repeat 50%;}
+.main-visual .main-wrap .app-ico02 {position: absolute; top: 145px; right: 380px; width: 62px; height: 82px; background: transparent url(../images/ico02.png) no-repeat 50%;}
+.main-visual .main-wrap .app-ico03 {position: absolute; top: 50px; left: 210px; width: 62px; height: 82px; background: transparent url(../images/ico03.png) no-repeat 50%;}
+.main-visual .main-wrap .app-ico04 {position: absolute; top: 320px; right: 130px; width: 62px; height: 90px; background: transparent url(../images/ico04.png) no-repeat 50%;}
+.main-visual .main-wrap > h1 {position: absolute; top: 90px; left: 50%; transform: translateX(-50%); text-align: center; font-size: 36px; font-weight: 400; z-index: 1; letter-spacing: -1px; color: #2b2b2b;}
+.main-visual .main-wrap .text {text-align: center; font-size: 16px; width: 100%; display: block; color: #666; position: absolute; top: 144px; z-index: 1;}
+.main-visual .app-viewinfo {width: 340px; height: 150px; margin: 10px auto 0;}
+.main-visual .app-viewinfo ul {width: 100%; text-align: center;}
+.main-visual .app-viewinfo li {float: left; width: 50%; position: relative; box-sizing: border-box;}
+.main-visual .app-viewinfo li:first-child:after {position: absolute; top: 12px; left: 170px; height: 60px; content: ""; display: inline-block; border-right: 1px solid rgba(9,54,135,.2);}
+.main-visual .app-viewinfo .app-num {font-size: 48px; font-weight: bold; color: #093687;}
+.main-visual .app-viewinfo .app-text {width: 100%; text-align: center; font-size: 16px; color: #7588aa;}
+.main-visual .app-btn {text-align: center; display: block;}
+.main-visual .app-btn .explore {background: #0062df; margin: 0 5px; width: 150px; height: 46px; display: inline-block; text-align: center; line-height: 46px; color: #fff; font-size: 16px;}
+.main-visual .app-btn .signin {background: #093687;  margin: 0 5px; width: 150px; height: 46px; display: inline-block; text-align: center; line-height: 46px; color: #fff; font-size: 16px;}
+.main-visual .main-notice {position: absolute; top: 35px; right: 20px; z-index: 50; width: 300px; height: 140px; padding: 20px; font-size: 13px; color: #fff; background-color: rgba(0,98,223,0.8);}
+.main-visual .main-notice .notice-header {position: relative; margin-bottom: 10px;}
+.main-visual .main-notice .notice-header > span {color: #ffc008; font-weight: bold;}
+.main-visual .main-notice .notice-header .more-btn {position: absolute; top: 0; right: 0; display: inline-block;}
+.main-visual .main-notice li {background: transparent url(../images/dot.png) no-repeat 0; margin-top: 10px; padding-left: 10px; line-height: 15px; font-weight: 400; color: #fff;}
+.main-visual .main-notice li a {width: 290px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block;}
+.main-visual .main-notice li > a:hover, .main-visual .main-notice li > a:focus-within {text-decoration: underline;}
+
+/*app-banner*/
+.app-banner {width: 100%; height: 90px; overflow: hidden;}
+.app-banner .app-banner-wrap a {display: block; height: 90px; background-color: rgb(25,30,56);}
+.app-banner .app-banner-wrap a .phishing-warning {width: 1400px; height: 90px; margin: 0 auto;}
+.app-banner .app-banner-wrap a .phishing-warning img {width: 100%;}
+
+/*data-display*/
+.data-display {width: 100%; height: 400px;}
+.data-display .app-wrap {width: 1400px; margin: 0 auto; padding: 0 20px; overflow: hidden; box-sizing: border-box;}
+.data-display .chart-list {padding: 50px 10px 0 10px;}
+.data-display .chart-list .col {padding: 0 40px; float: left; width: 360px;}
+.data-display .chart-list .chart-header {font-size: 30px;}
+.data-display .chart-list .chart-header label {height: 45px; line-height: 45px;}
+.data-display .chart-list .chart-header span {height: 45px; line-height: 45px; float: right; padding-top: 2px; box-sizing: border-box; color: #0051c7;}
+.data-display .chart-list .index-data {font-size: 16px;}
+.data-display .chart-list .index-data label {height: 24px; line-height: 24px; color: #666;}
+.data-display .chart-list .index-data span {float: right; height: 24px; line-height: 24px; color: #0051c7;}
+.data-display .chart-list .index-data span .down {background: transparent url(../images/icoUpDown.png) no-repeat 0 -31px; background-size: 12px; width: 12px; height: 8px; display: inline-block; margin-right: -6px;}
+.data-display .chart-list .index-data span strong {margin-left: 6px;}
+.data-display .chart-list .chart-area {margin-top: 30px;}
+.data-display .chart-ubmi .chart-area .chart {position: relative; width: 359px; height: 148px; text-align: left; border: 1px solid #eee; background-image: url(../images/ubmi-chart.jpg); transition: all 0.4s ease;}
+.data-display .chart-ubmi .chart-area .chart:hover, .data-display .chart-ubmi .chart-area .chart:focus-within {background-image: url(../images/ubmi-chart-hover.jpg);}
+.data-display .chart-ubai .chart-area .chart {position: relative; width: 359px; height: 148px; text-align: left; border: 1px solid #eee; background-image: url(../images/ubai-chart.jpg); transition: all 0.4s ease;}
+.data-display .chart-ubai .chart-area .chart:hover, .data-display .chart-ubai .chart-area .chart:focus-within {background-image: url(../images/ubai-chart-hover.jpg);}
+.data-display .chart-area .remark {margin-top: 14px 0 0;}
+.data-display .remark span {margin-right: 16px; font-size: 12px; color: #666;}
+.data-display .remark i {font-style: normal; display: inline-block; margin-right: 8px;}
+.data-display .remark .today i {width: 10px; height: 2px; background-color: #093687; vertical-align: middle;}
+.data-display .remark .yesterday i {width: 10px; height: 10px; background-color: #e6e7ec;}
+
+.data-display .chart-list .coin-price ul li {font-size: 16px; border-bottom: 1px solid #eee; padding: 11px 0;}
+.data-display .coin-price ul li a:hover label, .data-display .coin-price ul li a:focus-within label {text-decoration: underline;}
+.data-display .coin-price ul li label {width: 120px; float: left; height: 24px; line-height: 24px;}
+.data-display .coin-price ul li .price-data {padding-left: 120px; box-sizing: border-box; width: 100%; height: 24px; line-height: 24px; text-align: right; position: relative;}
+.data-display .coin-price .price-data .price {padding-right: 90px; color: #0051c7;}
+.data-display .coin-price .price-data .rate {width: 90px; position: absolute; right: 0; top: 0; color: #0051c7;}
+
+/*app-info1*/
+.app-info1 {width: 100%; height: 960px; padding-top: 80px; box-sizing: border-box; display: inline-table; background-color: #093687;}
+.app-info1 .app-wrap {background: transparent url(../images/sliderGalbg.png) no-repeat center 130px; margin: 0 auto; position: relative; width: 1400px; height: 100%; padding: 0 170px; overflow: hidden; box-sizing: border-box;}
+.app-info1 h2 {color: #fff; text-align: center; font-size:36px; font-weight: 300;}
+.app-info1 span {margin-top: 10px; text-align: center; font-size: 16px; width: 100%; display: block; color: #fff; font-weight: 300;}
+.app-info1 .app-slider {height: 620px;}
+.app-info1 .app-slider .app-link-btn {margin-top: 26px; text-align: center;}
+.app-info1 .app-link-btn a {background-color: #002a76; color: #fff; font-size: 16px; width: 150px; height: 46px; line-height: 46px; text-align: center; display: inline-block; margin: 0 3px;}
+.app-info1 .app-link-btn a i {width: 16px; height: 20px; display: inline-block; vertical-align: -3px; margin-right: 8px;}
+.app-info1 .app-link-btn .app-and {background: transparent url(../images/icoStore.png) no-repeat 0 -31px; background-size: 16px;}
+.app-info1 .app-link-btn .app-ios {background: transparent url(../images/icoStore.png) no-repeat 0 -92px; background-size: 16px;}
+.app-info1 .app-slider-bg {padding-top: 0; position: relative; width: 100%; margin: 0 auto;}
+.app-info1 .app-slider-circle-wrap {width: 100%; position: absolute; height: 620px;}
+.app-info1 .app-mobile-slider {width: 234px; overflow: hidden; position: absolute; top: 123px; left: 50%; margin-left: -117px; z-index: 9;}
+.app-info1 .app-slider-bg .app-bg {position: absolute; top: 46px; left: 50%; margin-left: -172px; z-index: 10;}
+.app-info1 .app-slider-bg .app-mobile-slider {width: 234px; position: absolute; top: 123px; left: 50%; margin-left: -117px; z-index: 9; overflow: hidden;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div {position: absolute; width: 400px; box-sizing: border-box;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(2n-1) img {position: absolute; right: 0; top: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(2n) img {position: absolute; left: 0; top: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div.on img.on {opacity: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div.on img.off {opacity: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div img.on {opacity: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div img.off {opacity: 1;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div a.slide-btn {width: 400px; height: 140px; display: inline-block; padding: 0; background: transparent; transition: all 0.4s; z-index: 99; cursor: pointer;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div a.slide-btn img.on {opacity: 0;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div a.slide-btn img.off {opacity: 0}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:first-child {top: 97px; left: -125px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:first-child a.slide-btn {position: absolute; right: 0; top: 0; text-align: right;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:first-child p.app-text {text-align: right; padding-right: 100px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(2) {top: 59px; right: -90px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(2) a.slide-btn {position: absolute; left: 0; top: 0; text-align: left;} 
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(2) p.app-text {padding-left: 100px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(3) {bottom: 50px; left: -40px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(3) a.slide-btn {position: absolute; right: 0; top: 0; text-align: right;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:nth-child(3) p.app-text {text-align: right; padding-right: 100px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:last-child {bottom: 97px; right: -60px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:last-child a.slide-btn {position: absolute; left: 0; top: 0; text-align: left;} 
+.app-info1 .app-slider-bg .app-slider-circle-wrap div:last-child {padding-left: 100px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div .app-title {display: block; color: #fff; font-size: 20px; margin-top: 28px;}
+.app-info1 .app-slider-bg .app-slider-circle-wrap div .app-subtext {display: block; color: #83a4cb; font-size: 16px; margin-top: 10px;}
+
+/*app-info2*/
+.app-info2 {background-color: #f4f5f8; height: 570px; padding-top: 80px; box-sizing: border-box; display: inline-table; width: 100%;}
+.app-info2 .app-wrap {width: 1400px; margin: 0 auto;}
+.app-info2 h2 {color: #2b2b2b; text-align: center; font-size: 36px;}
+.app-info2 span {color: #666; margin-top: 10px; text-align: center; font-size: 16px; width: 100%; display: block;}
+.app-info2 .app-info2img {text-align: center; margin-top: 50px;}
+.app-info2text {margin-top: 40px; text-align: center;}
+.app-info2text dl {display: inline-block; width: 390px; padding: 0 20px; box-sizing: border-box;}
+.app-info2text dl dt {display: block; font-size: 20px; color: #2b2b2b;}
+.app-info2text dl dd {margin-top: 10px; color: #999; font-size: 16px;}
+
+/*app-info3*/
+.app-info3 {background-color: #0d2c63; height: 550px; width: 100%; padding: 80px 0 90px; box-sizing: border-box; display: inline-table;}
+.app-info3 .app-wrap {width: 1400px; margin: 0 auto; padding: 0 20px; overflow: hidden;}
+.app-info3 h2 {color: #fff; text-align: center; font-size: 36px; font-weight: 300;}
+.app-info3 span {margin-top: 10px; text-align: center; font-size: 16px; width: 100%; display: block; color: #fff; font-weight: 300;}
+.app-info3 .app-info3list {display: block; margin-left: 150px; width: 100%; height: 240px; margin-top: 53px; padding: 0 20px 0 58px; box-sizing: border-box;}
+.app-info3 .app-info3list dl:first-child {float: left; width: 400px; text-align: center;}
+.app-info3 .app-info3list dl:last-child {float: left; width: 640px; text-align: center;}
+.app-info3 .app-info3list dl img {margin: 0 25px; vertical-align: top;}
+.app-info3 .app-info3list dl dt {font-size: 20px; color: #2b2b2b;}
+.app-info3 .app-info3list dl dd {margin-top: 10px; color: #999; font-size: 16px;}
+.app-info3 .app-info3list dl dd h5 {color: #fff; margin-top: 35px; font-size: 20px; font-weight: 400;}
+.app-info3 .app-info3list dl dd .text {color: #8ea4cb; font-size: 16px; font-weight: 400; padding: 0; margin: 16px 0 0;}
+
+/*app-info4*/
+.app-info4 {width: 100%; height: 320px; display: inline-table; border-bottom: 1px solid #ddd;}
+.app-info4 .app-wrap {width: 1200px; margin: 0 auto; padding: 0 20px; overflow: hidden;}
+.app-info4 .app-wrap .row {margin: 0 -20px;}
+.app-info4 h3 {height: 50px; line-height: 50px; display: flex; margin: 60px 0 24px; font-size: 24px; color: #2b2b2b;}
+.app-info4 a i {text-indent: -1000em; width: 18px; display: inline-block; vertical-align: sub;}
+.app-info4 .help {width: 33.333%; float: left;}
+.app-info4 .help .help-ico {width: 50px; height: 50px; display: inline-block; margin-right: 10px; background: transparent url(../images/icoList.png) no-repeat 0 -75px; background-size: 50px;}
+.app-info4 .help .tel {font-size: 34px; height: 47px; line-height: 47px;}
+.app-info4 .help .tel span {font-size: 18px; margin-left: 5px; vertical-align: middle; color: #2b2b2b; height: 40px; line-height: 40px;}
+.app-info4 .help .talk > a {line-height: 43px; margin-top: 15px; margin-right: 7px; padding: 0 18px; border: 1px solid #ddd; display: inline-block; font-size: 16px; color: #666; height: 46px; transition: all 0.4s ease;}
+.app-info4 .help .talk > a:hover {background: #ddd; color: #fff; font-weight: bold;}
+.app-info4 .help .talk a .app-kakao {background: transparent url(../images/InfoIcoBg.png) no-repeat 0 0; background-size: 18px; height: 18px;}
+.app-info4 .lounge {width: 33.333%; float: left;}
+.app-info4 .lounge .lounge-ico {width: 50px; height: 50px; display: inline-block; margin-right: 10px; background: transparent url(../images/icoList.png) no-repeat 0 0; background-size: 50px;}
+.app-info4 .lounge p, .dot-list {font-size: 16px; color: #999; margin-bottom: 15px;}
+.app-info4 .lounge .dot-list li {position: relative; padding-left: 10px; line-height: 24px;}
+.app-info4 .lounge .dot-list li:before {content: ""; display: block; width: 2px; height: 2px; border-radius: 50%; background: #999; position: absolute; left: 0; top: 50%;}
+.app-info4 .upbit-app {width: 33.333%; float: left;}
+.app-info4 .upbit-app .upbit-ico {width: 50px; height: 50px; display: inline-block; margin-right: 10px; background: transparent url(../images/icoList.png) no-repeat 0 -150px; background-size: 50px;}
+.app-info4 .upbit-app .app-area {position: relative; padding-left: 120px;}
+.app-info4 .upbit-app .app-area .app-qrcode {position: absolute; left: 0; top: 0; padding: 14px; border: 1px solid #ddd; box-sizing: border-box;}
+.app-info4 .app-qrcode img {width: 76px; height: 76px;}
+.app-info4 .app-btn {width: 240px; height: 106px;}
+.app-info4 .app-btn a {width: 150px; line-height: 43px; color: #666; font-size: 16px; padding: 0 18px; border: 1px solid #ddd; display: inline-block; height: 46px; box-sizing: border-box; text-align: center; margin-bottom: 15px;}
+.app-info4 .app-btn a .app-and {background: transparent url(../images/InfoIcoBg.png) no-repeat 0 -26px; background-size: 18px; height: 20px;}
+.app-info4 .app-btn a .app-ios {background: transparent url(../images/InfoIcoBg.png) no-repeat 0 -58px; background-size: 18px; height: 20px;}
+
+/*footer*/
+footer {width: 100%; height: 200px; padding: 40px 0; font-size: 14px;}
+footer .app-wrap {position: relative; width: 1400px; margin: 0 auto;}
+footer .app-logo {position: absolute; left: 20px; top: 6px; width: 77px; margin-top: 0; height: 17px; display: inline-block; background: transparent url(../images/logo_upbit.png) no-repeat center/cover; text-indent: -9999px;}
+footer .aboutus {float: left;}
+footer .aboutus p {padding-left: 120px; height: 24px; line-height: 24px; color: #999;}
+footer .aboutus p span:before {content: ''; height: 13px; display: inline-block;}
+footer .aboutus p span:first-child:before {padding: 0;}
+footer .aboutus p span:after {content: ''; padding: 0 5px; margin-right: 5px; height: 12px; margin-bottom: 3px; display: inline-block; vertical-align: middle; border-right: 1px solid #ddd;}
+footer .aboutus p span:last-child:after {border-right: none;}
+footer .aboutus .contact span {color: #2b2b2b;}
+footer .our-company span:first-child:hover {text-decoration: underline;}
+footer .sns {margin-top: 10px; box-sizing: border-box; font-size: 0; padding-left: 120px;}
+footer .sns-item {overflow: hidden; display: inline-block; margin-right: 10px; width: 26px; height: 26px; background: #bbb no-repeat 50%; border-radius: 50%; color: #999; text-indent: 9999px;}
+footer .sns .twitter {background-image: url(../images/icon_sns_twitter.png);}
+footer .sns .facebook {background-image: url(../images/icon_sns_facebook.png);}
+footer .sns .medium {background-image: url(../images/icon_sns_medium.png);}
+footer .sns .naver {background-image: url(../images/icon_sns_naver.png);}
+footer .sns .linkedin {background-image: url(../images/icon_sns_linkedin.png);}
+footer .sns .youtube {background-image: url(../images/icon_sns_Youtube.png);}
+footer .company {margin-top: 20px; margin-left: 3px;}
+footer .company a {margin-right: 20px;}
+footer .copyright {margin-top: 6px;}
+
+footer .footer-menu {float: right; width: 450px;}
+footer .footer-menu dl {width: 50%; float: left;}
+footer .footer-menu dl dt {color: #2b2b2b; margin-bottom: 10px; font-weight: 700;}
+footer .footer-menu dl dd {line-height: 25px;}
+footer .footer-menu dl dd a {color: #666;}
+footer .footer-menu dl dd a:hover, footer .footer-menu dl dd a:focus-within {text-decoration: underline;}
+footer .footer-menu dl:first-child dd:last-child a {color: #093687; font-size: 15px; font-weight: 600;}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*subMain*/
+.subMain {width: 1170px; margin: 90px auto 0; height: 1650px;}
+.subMain .customer-menu {float: left; width: 192px;}
+.subMain .customer-menu .menu-nav {float: left; width: 192px; min-height: auto; margin-bottom: 10px; box-shadow: 2px 2px 4px #dee1e7;}
+.subMain .customer-menu .menu-nav h3 {height: 80px; padding-left: 30px; background: #525f6e; line-height: 74px; color: #fff; font-size: 20px;}
+.subMain .menu-nav .menu-list {width: 100%; padding: 16px 0; background: #fff;}
+.subMain .menu-nav .menu-list ul li a {display: block; height: 44px; padding-left: 30px; line-height: 44px; font-size: 16px;}
+.subMain .menu-nav .menu-list ul li a:hover {text-decoration: underline;}
+.subMain .menu-nav .menu-list .on {background: #f5f6fa; color: #0051c7; font-weight: bold;}
+.subMain .menu-nav .menu-list .new-tag {display: inline-block; width: 16px; height: 16px; background: url(../images/icon_new_tag.png) no-repeat center/cover; vertical-align: middle; margin: 0 0 3px 5px;}
+
+.subMain .contents {float: right; width: 960px;}
+.subMain .contents .contents-area {float: left; width: 960px; min-height: 880px; margin-left: 10px; margin-bottom: 10px; background-color: #fff; box-shadow: 2px 2px 4px #dee1e7;}
+.subMain .contents .contents-area .contents-wrap {position: relative; width: 860px; margin: 0 auto; padding: 40px 0 45px;}
+.subMain .contents .contents-area .contents-wrap h3 {height: 40px; color: #2b2b2b; font-size: 27px; line-height: 40px; font-weight: bold;}
+.subMain .contents-wrap .notice-search {position: absolute; right: 0; top: 38px;}
+.subMain .contents-wrap .notice-search .input {position: relative; display: inline-block;}
+.subMain .contents-wrap .notice-search .input input {height: 44px; width: 295px; border: 1px solid #e1e2e6; border-radius: 2px; font-size: 14px; background-color: #f9fafc; padding: 0 40px 0 20px; box-sizing: border-box; color: #2b2b2b;}
+.subMain .notice-search .btn-close {position: absolute; right: 0; top: 14px; width: 14px; height: 14px; margin: 2px 14px 0 0; background: url(../images/bg-sprite.png) 0 -80px no-repeat; overflow: hidden; text-indent: -9999px;}
+.subMain .notice-search .search-btn {padding: 0 20px; display: inline-block; height: 44px; line-height: 44px; color: #fff; font-size: 15px; background-color: #0062df; border-radius: 2px; box-sizing: border-box; vertical-align: top; margin-left: 8px;}
+.subMain .notice-search .search-btn:hover {text-decoration: underline;}
+
+.subMain .contents-wrap .contents-table {width: 100%; margin: 14px 0 0; border-top: 2px solid #9b9fa8;}
+.subMain .contents-wrap .contents-table table {width: 100%;}
+.subMain .contents-wrap .contents-table table .new {display: inline-block; width: 16px; height: 16px; margin-left: 5px; vertical-align: middle;}
+.subMain .contents-table table thead {background-color: #fafafc; border-bottom: 1px solid #e8e8ec;}
+.subMain .contents-table table thead th {height: 38px; border-left: 0; color: #666; font-weight: 400; padding: 4px 0;}
+.subMain .contents-table table tbody .top td a {color: #2b2b2b; font-weight: 700;}
+.subMain .contents-table table tbody td {height: 50px; padding: 0; border-left: 0; text-align: center; border-bottom: 1px solid #e8e8ec; color: #666; font-size: 14px; }
+.subMain .contents-table table tbody .left {padding-left: 20px; text-align: left;}
+.subMain .contents-table table tbody .left:hover {text-decoration: underline;}
+.subMain .contents-table table tbody .right {padding-right: 20px; text-align: right;}
+
+.subMain .contents-wrap .paging {display: block; width: 100%; height: 28px; margin: 0 auto; padding: 40px 0; text-align: center; overflow: hidden;}
+.subMain .contents-wrap .paging strong, .paging a {display: inline-block; margin: 0 2px; font-size: 12px; vertical-align: top;}
+.subMain .contents-wrap .paging strong {display: inline-block; margin: 0 2px; font-size: 12px; vertical-align: top; width: 28px; height: 28px; background: #0062df; line-height: 30px; color: #fff; font-weight: 700;}
+.subMain .contents-wrap .paging a {width: 26px; height: 26px; border: 1px solid #c1c1c1; line-height: 28px; color: #2b2b2b;}
+.subMain .contents-wrap .paging .next {margin: 0 2px 0 6px;}

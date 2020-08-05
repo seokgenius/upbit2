@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*common*/
+body {font: 15px 'Noto Sans KR',sans-serif; background-color: #e9ecf1;}
+#skip-nav {position: fixed; left: 0; top: -36px; width: 100%; line-height: 35px; font-size: 16px; border-bottom: 1px solid #ffffff; color: #ffffff; background: #999999; background: rgba(0, 0, 0, 0.6); text-align: center; z-index: 10000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+/*header*/
+header {position: fixed; top: 0; width: 100%; background-color: #093687; color: #fff; z-index: 100; border-bottom: 1px solid #fff; height: 79px; overflow: visible;}
+header .header-wrap {width: 1400px; margin: 0 auto; padding: 0 20px;}
+header .logo {float: left; width: 77px; margin-top: 30px; margin-left: 20px; height: 17px; display: block; background: transparent url(../images/bg-sprite.png) no-repeat 0 0;}
+header .gnb {float: left; margin-left: 40px; width: 605px; height: 100%;}
+header .gnb ul li {float: left; width: 81px; height: 79px; line-height: 79px; color: #fff; margin-left: 20px;}
+header .gnb ul li:hover {font-weight: bold;}
+header .tnb {position: absolute; top: 0; right: 200px;}
+header .tnb ul li {position: relative; float: left; height: 79px; line-height: 79px; padding-left: 30px; font-size: 13px;}
+header .tnb ul li:hover {font-weight: bold;}
+
+/*footer*/
+footer {width: 100%; height: 200px; display: block; border-top: 1px solid #fff; padding: 40px 0; font-size: 14px; background: #fff;}
+footer .app-wrap {position: relative; width: 1400px; margin: 0 auto;}
+footer .app-logo {position: absolute; left: 20px; top: 6px; width: 77px; margin-top: 0; height: 17px; display: block; background: transparent url(../images/logo_upbit.png) no-repeat center/cover;}
+footer .aboutus {float: left;}
+footer .aboutus p {padding-left: 120px; height: 24px; line-height: 24px; color: #999;}
+footer .aboutus p span:before {content: ''; height: 13px; display: inline-block;}
+footer .aboutus p span:first-child:before {padding: 0;}
+footer .aboutus p span:after {content: ''; padding: 0 5px; margin-right: 5px; height: 12px; margin-bottom: 3px; display: inline-block; vertical-align: middle; border-right: 1px solid #ddd;}
+footer .aboutus p span:last-child:after {border-right: none;}
+footer .aboutus .contact span {color: #2b2b2b;}
+footer .our-company span:first-child:hover {text-decoration: underline;}
+footer .sns {margin-top: 10px; box-sizing: border-box; font-size: 0; padding-left: 120px;}
+footer .sns-item {overflow: hidden; display: inline-block; margin-right: 10px; width: 26px; height: 26px; background: #bbb no-repeat 50%; border-radius: 50%; color: #999; text-indent: 9999px;}
+footer .sns .twitter {background-image: url(../images/icon_sns_twitter.png);}
+footer .sns .facebook {background-image: url(../images/icon_sns_facebook.png);}
+footer .sns .medium {background-image: url(../images/icon_sns_medium.png);}
+footer .sns .naver {background-image: url(../images/icon_sns_naver.png);}
+footer .sns .linkedin {background-image: url(../images/icon_sns_linkedin.png);}
+footer .sns .youtube {background-image: url(../images/icon_sns_Youtube.png);}
+footer .company {margin-top: 20px; margin-left: 3px;}
+footer .company a {margin-right: 20px;}
+footer .copyright {margin-top: 6px;}
+footer .footer-menu {float: right; width: 450px;}
+footer .footer-menu dl {width: 50%; float: left;}
+footer .footer-menu dl dt {color: #2b2b2b; margin-bottom: 10px; font-weight: 700;}
+footer .footer-menu dl dd {line-height: 25px;}
+footer .footer-menu dl dd a {color: #666;}
+footer .footer-menu dl dd a:hover {text-decoration: underline;}
+footer .footer-menu dl:first-child dd:last-child a {color: #093687; font-size: 15px; font-weight: 600;}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>업비트 - 회원가입</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/join.css" />
+    <link rel="icon" href="../assets/images/favicon.jpg" />
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/join.js"></script>
+</head>
+<body class="account_add">
+    <div id="wrap">
+        <div id="head">
+            <h1 class="logo">
+                <span class="ir">Upbit</span>
+            </h1>
+        </div>
+        <div id="content">
+            <div id="container">
+                <div class="join_form">
+                    <h2 class="title">업비트 계정 정보를 입력하세요</h2>
+                    <form action="user_info.php" method="post">
+                        <fieldset class="fld_apply">
+                            <legend class="ir">정보입력 폼</legend>
+                            <strong class="required_tit">이메일(아이디)</strong>
+                            <div class="email_input">
+                                <label for="user_id" class="lab lab_email"></label>
+                                <input type="text" name="user_id" id="user_id" class="required_input" required autocomplete="off" />
+                                <div class="util">
+                                    <button type="button" class="btn_del">
+                                        <span class="ico_del">삭제 버튼</span>
+                                    </button>
+                                </div>
+                                <div class="at">
+                                    @
+                                </div>
+                                <div class="email_select">
+                                    <select name="email" id="email">
+                                        <option value="" selected>-- 선택 --</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="direct">직접입력</option>
+                                        <!--직접입력 박스-->
+                                        <input type="text" name="email_direct" id="email_direct" />
+                                    </select>
+                                </div>
+                            </div>
+                            <strong class="required_tit">비밀번호</strong>
+                            <div class="pw_input">
+                                <label for="user_pw" class="lab lab_pw"></label>
+                                <input type="password" name="user_pw" id="user_pw" class="required_input" required autocomplete="off" />
+                                <div class="util">
+                                    <button type="button" class="btn_del">
+                                        <span class="ico_del">삭제 버튼</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <strong class="required_tit">비밀번호 확인</strong>
+                            <div class="pw_input">
+                                <label for="user_pw" class="lab lab_pw"></label>
+                                <input type="password" id="user_pw" class="required_input" required autocomplete="off" />
+                                <div class="util">
+                                    <button type="button" class="btn_del">
+                                        <span class="ico_del">삭제 버튼</span>
+                                    </button>
+                                </div>
+                                <div class="pw_check"></div>
+                            </div>
+                            <strong class="required_tit">이름</strong>
+                            <div class="name_input">
+                                <label for="user_name" class="lab lab_name"></label>
+                                <input type="text" name="user_name" id="user_name" class="required_input" required autocomplete="off" />
+                                <div class="util">
+                                    <button type="button" class="btn_del">
+                                        <span class="ico_del">삭제 버튼</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <strong class="required_tit">전화번호</strong>
+                            <div class="tel_input">
+                                <label for="user_tel" class="lab lab_tel"></label>
+                                <input type="tel" name="user_tel" id="user_tel" class="required_input" required autocomplete="off" />
+                                <div class="util">
+                                    <button type="button" class="btn_del">
+                                        <span class="ico_del">삭제 버튼</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn_area">
+                                <button type="submit" class="join">가입</button>
+                                <button type="reset" class="cancel"><a href="index.html">취소</a></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
