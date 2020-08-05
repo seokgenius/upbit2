@@ -4,7 +4,7 @@
 ## 문서 정의
 | Document Type | `<!DOCTYPE html>` ( html5 ) |
 | :-------------| :---------------------------|
-| Incoding.     | `<meta charset="utf-8" />`  |
+| Encoding      | `<meta charset="utf-8" />`  |
 | Cross Browsing| Chrome, Edge                |
 
 ## CSS 구조
